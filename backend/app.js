@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+mongoose.set("strictQuery", false);
+
 mongoose.connect('mongodb+srv://userLuk3s:Lukas0905@cluster0.av3qbp4.mongodb.net/?retryWrites=true&w=majority',
   { useNewUrlParser: true,
   useUnifiedTopology: true })
